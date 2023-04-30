@@ -241,6 +241,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="jUq-hp-UTK">
+                                <rect key="frame" x="214" y="-25.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="MWP-e0-Iua"/>
+                                    <constraint firstAttribute="width" constant="300" id="lHT-iE-Day"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUD-w2-2tx">
                                 <rect key="frame" x="20" y="32.5" width="374" height="42"/>
                                 <attributedString key="attributedText">
@@ -283,6 +290,8 @@
                         <constraints>
                             <constraint firstItem="G6i-yU-AZz" firstAttribute="centerX" secondItem="nwi-9k-lcN" secondAttribute="centerX" id="9zF-fn-cPi"/>
                             <constraint firstItem="4Xg-34-13I" firstAttribute="top" secondItem="G6i-yU-AZz" secondAttribute="bottom" constant="20" id="C0O-vv-xrO"/>
+                            <constraint firstItem="n79-Nd-afq" firstAttribute="trailing" secondItem="jUq-hp-UTK" secondAttribute="trailing" constant="-100" id="C2L-pY-xRJ"/>
+                            <constraint firstItem="jUq-hp-UTK" firstAttribute="top" secondItem="WUD-w2-2tx" secondAttribute="bottom" constant="-100" id="FrM-WL-IJ5"/>
                             <constraint firstItem="4Xg-34-13I" firstAttribute="centerX" secondItem="nwi-9k-lcN" secondAttribute="centerX" id="JZV-wl-Gko"/>
                             <constraint firstItem="G6i-yU-AZz" firstAttribute="centerY" secondItem="nwi-9k-lcN" secondAttribute="centerY" id="KHf-MY-n7c"/>
                             <constraint firstItem="n79-Nd-afq" firstAttribute="trailing" secondItem="WUD-w2-2tx" secondAttribute="trailing" constant="20" id="Mfo-WW-fGb"/>
@@ -390,13 +399,14 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Lxv-D8-lLE"/>
-        <segue reference="IAU-4A-JZw"/>
+        <segue reference="3aj-gk-fJF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="kid1" width="1080" height="1080"/>
         <image name="kid2" width="1080" height="1080"/>
         <image name="kids" width="1080" height="1080"/>
+        <image name="sun" width="1080" height="1080"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
