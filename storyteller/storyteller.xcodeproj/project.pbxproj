@@ -16,6 +16,13 @@
 		BC98D5F529F16AAF0008E38C /* storytellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98D5F429F16AAF0008E38C /* storytellerTests.swift */; };
 		BC98D5FF29F16AAF0008E38C /* storytellerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98D5FE29F16AAF0008E38C /* storytellerUITests.swift */; };
 		BC98D60129F16AAF0008E38C /* storytellerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98D60029F16AAF0008E38C /* storytellerUITestsLaunchTests.swift */; };
+		BCCB5FB229FCE3A800963EEE /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB5FB129FCE3A800963EEE /* AgeViewController.swift */; };
+		BCCB5FB429FCE3C700963EEE /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB5FB329FCE3C700963EEE /* TraitsViewController.swift */; };
+		BCCB5FB629FCE3D200963EEE /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB5FB529FCE3D200963EEE /* GenerateViewController.swift */; };
+		BCCB5FB829FCE3F300963EEE /* StoryEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB5FB729FCE3F300963EEE /* StoryEntryViewController.swift */; };
+		BCCB5FBA29FD4B9000963EEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCCB5FB929FD4B9000963EEE /* GoogleService-Info.plist */; };
+		BCCB5FBD29FD4FBB00963EEE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BCCB5FBC29FD4FBB00963EEE /* FirebaseFirestore */; };
+		BCCB5FBF29FD4FBB00963EEE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCCB5FBE29FD4FBB00963EEE /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,11 @@
 		BC98D5FA29F16AAF0008E38C /* storytellerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storytellerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98D5FE29F16AAF0008E38C /* storytellerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storytellerUITests.swift; sourceTree = "<group>"; };
 		BC98D60029F16AAF0008E38C /* storytellerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storytellerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCCB5FB129FCE3A800963EEE /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		BCCB5FB329FCE3C700963EEE /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsViewController.swift; sourceTree = "<group>"; };
+		BCCB5FB529FCE3D200963EEE /* GenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
+		BCCB5FB729FCE3F300963EEE /* StoryEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryEntryViewController.swift; sourceTree = "<group>"; };
+		BCCB5FB929FD4B9000963EEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCB5FBD29FD4FBB00963EEE /* FirebaseFirestore in Frameworks */,
+				BCCB5FBF29FD4FBB00963EEE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,7 @@
 		BC98D5DC29F16AAD0008E38C /* storyteller */ = {
 			isa = PBXGroup;
 			children = (
+				BCCB5FB929FD4B9000963EEE /* GoogleService-Info.plist */,
 				BC98D5DD29F16AAD0008E38C /* AppDelegate.swift */,
 				BC98D5DF29F16AAD0008E38C /* SceneDelegate.swift */,
 				BC98D5E129F16AAD0008E38C /* ViewController.swift */,
@@ -106,6 +121,10 @@
 				BC98D5E629F16AAF0008E38C /* Assets.xcassets */,
 				BC98D5E829F16AAF0008E38C /* LaunchScreen.storyboard */,
 				BC98D5EB29F16AAF0008E38C /* Info.plist */,
+				BCCB5FB129FCE3A800963EEE /* AgeViewController.swift */,
+				BCCB5FB329FCE3C700963EEE /* TraitsViewController.swift */,
+				BCCB5FB529FCE3D200963EEE /* GenerateViewController.swift */,
+				BCCB5FB729FCE3F300963EEE /* StoryEntryViewController.swift */,
 			);
 			path = storyteller;
 			sourceTree = "<group>";
@@ -143,6 +162,10 @@
 			dependencies = (
 			);
 			name = storyteller;
+			packageProductDependencies = (
+				BCCB5FBC29FD4FBB00963EEE /* FirebaseFirestore */,
+				BCCB5FBE29FD4FBB00963EEE /* FirebaseFirestoreSwift */,
+			);
 			productName = storyteller;
 			productReference = BC98D5DA29F16AAD0008E38C /* storyteller.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,9 @@
 				Base,
 			);
 			mainGroup = BC98D5D129F16AAD0008E38C;
+			packageReferences = (
+				BCCB5FBB29FD4FBB00963EEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BC98D5DB29F16AAD0008E38C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCB5FBA29FD4B9000963EEE /* GoogleService-Info.plist in Resources */,
 				BC98D5EA29F16AAF0008E38C /* LaunchScreen.storyboard in Resources */,
 				BC98D5E729F16AAF0008E38C /* Assets.xcassets in Resources */,
 				BC98D5E529F16AAD0008E38C /* Main.storyboard in Resources */,
@@ -259,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC98D5E229F16AAD0008E38C /* ViewController.swift in Sources */,
+				BCCB5FB829FCE3F300963EEE /* StoryEntryViewController.swift in Sources */,
+				BCCB5FB629FCE3D200963EEE /* GenerateViewController.swift in Sources */,
 				BC98D5DE29F16AAD0008E38C /* AppDelegate.swift in Sources */,
+				BCCB5FB229FCE3A800963EEE /* AgeViewController.swift in Sources */,
+				BCCB5FB429FCE3C700963EEE /* TraitsViewController.swift in Sources */,
 				BC98D5E029F16AAD0008E38C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +635,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCCB5FBB29FD4FBB00963EEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCCB5FBC29FD4FBB00963EEE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCCB5FBB29FD4FBB00963EEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BCCB5FBE29FD4FBB00963EEE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCCB5FBB29FD4FBB00963EEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC98D5D229F16AAD0008E38C /* Project object */;
 }
